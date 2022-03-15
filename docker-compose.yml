@@ -1,0 +1,30 @@
+version: "2.3"
+services:
+  mmcls_example:
+    build: docker/
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - PYTHONPATH=/working:$PYTHONPATH
+    container_name: mmcls_example
+    tty: true
+    volumes:
+      - ../CUB_200_2011:/working/data/CUB_200_2011
+      - $PWD:/working
+    working_dir: /working
+    ipc: host
+  mmdet_example:
+    build: docker/
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - PYTHONPATH=/working:$PYTHONPATH
+    container_name: mmdet_example
+    tty: true
+    volumes:
+      - /mnt/md0/coco:/working/data/coco/
+      - $PWD:/working
+    working_dir: /working
+    ipc: host

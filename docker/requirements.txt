@@ -1,0 +1,6 @@
+albumentations==1.1.0
+imgaug==0.4.0
+mmcls==0.21.0
+mmdet==2.22.0
+mmsegmentation==0.22.1
+timm==0.5.4
