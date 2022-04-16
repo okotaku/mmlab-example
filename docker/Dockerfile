@@ -14,8 +14,8 @@ RUN apt-get update && apt-get install -y \
 # Install python package.
 ADD requirements.txt  /tmp/requirements.txt
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir mmcv-full==1.4.6 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html && \
     pip install --no-cache-dir openmim==0.1.5 && \
+    mim install mmcv-full==1.4.6 && \
     pip install -r /tmp/requirements.txt
 
 # Language settings

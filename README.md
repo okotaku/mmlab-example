@@ -1,5 +1,14 @@
 # MMLabExample
 
+## About OpenMMLab
+
+- [official web site](https://openmmlab.com/)
+- [github](https://github.com/open-mmlab)
+- [platform](https://platform.openmmlab.com/home/)
+- [twitter](https://twitter.com/OpenMMLab)
+- [zhihu](https://www.zhihu.com/people/openmmlab)
+- [CVPR 2021 Tutorial](https://openmmlab.com/community/cvpr2021-tutorial)
+
 ## Download COCO
 
 It can be downloaded from [COCO homepage](https://cocodataset.org/#home).
