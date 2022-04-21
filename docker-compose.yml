@@ -10,7 +10,7 @@ services:
     container_name: mmcls_example
     tty: true
     volumes:
-      - ../CUB_200_2011:/working/data/CUB_200_2011
+      - $CUB_DIR:/working/data/CUB_200_2011
       - $PWD:/working
     working_dir: /working
     ipc: host
@@ -24,7 +24,7 @@ services:
     container_name: mmdet_example
     tty: true
     volumes:
-      - /mnt/md0/coco:/working/data/coco/
+      - $COCO_DIR:/working/data/coco/
       - $PWD:/working
     working_dir: /working
     ipc: host

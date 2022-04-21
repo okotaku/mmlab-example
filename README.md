@@ -9,10 +9,33 @@
 - [zhihu](https://www.zhihu.com/people/openmmlab)
 - [CVPR 2021 Tutorial](https://openmmlab.com/community/cvpr2021-tutorial)
 
-## Download COCO
+## Download Dataset
 
-It can be downloaded from [COCO homepage](https://cocodataset.org/#home).
+COCO can be downloaded from [COCO homepage](https://cocodataset.org/#home).
 Also mmdet has [a download script](https://github.com/open-mmlab/mmdetection/blob/master/tools/misc/download_dataset.py).
+
+CUB can be downloaded from [CUB homepage](http://www.vision.caltech.edu/datasets/cub_200_2011/).
+
+```
+coco
+├── annotations
+├── train2017
+└── val2017
+
+cub
+└── CUB_200_2011
+    ├── image_class_labels.txt
+    ├── images
+    ├── images.txt
+    └── train_test_split.txt
+```
+
+## Environment setup
+
+```commandline
+export CUB_DIR="/path/to/cub"
+export COCO_DIR="/path/to/coco"
+```
 
 ## How to Run
 
